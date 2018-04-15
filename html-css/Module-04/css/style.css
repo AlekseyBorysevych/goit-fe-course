@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900');
+
+body{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.logo{
+    /*float: left;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    color: #555252;
+    margin-top:30px;
+    margin-left: 40px;
+}
+.logo::before{
+    content: url('../img/mart.png')
+}
+
+.navig{
+    float: right;
+    margin-bottom: 0px;
+    margin-top: -24px;
+    width: 540px;
+    text-align: justify;
+    }
+
+.menu{
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color:#0f0101;
+    letter-spacing: -0.02em;
+    margin-right: 34px;
+}
+
+.first{
+    float: right;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 11px;
+    text-transform: uppercase;
+    color:#0f0101;
+    letter-spacing: -0.02em;
+    margin-right: 20px;
+}
+
+.menu:hover, .first:hover{
+    color: #1abc9c;
+}
+
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h1{
+    margin-top: 91px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color:#515151;
+    letter-spacing: -0.02em;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    width: 164px;
+    height: 7px;
+    background: #1abc9c;
+    margin: 0 auto;
+    margin-top: 34px;
+}
+
+.prodlist{
+    /*margin: 0 auto;
+    text-align: center;*/
+    margin-top: 92px;
+}
+
+.proditem{
+    float:left ;
+    margin-right:30px;
+    margin-bottom: 30px;
+    height: 314px;
+    width: 255px;
+    background: #323232;
+}
+
+.proditem:hover{
+    background: #1abc9c;
+}
+.proditem:hover .PI-name{
+    background: #1abc9c;
+}
+
+.proditem:hover .PI-price{
+    background: #7fd9c7
+}
+
+.proditem:nth-child(4n){
+    margin-right: 0px;
+}
+
+img{
+    float:left;
+}
+.PI-name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color:#ffffff;
+    letter-spacing: -0.02em;
+    margin-top: 0px;
+    text-align: left;
+    padding-left: 15px;
+    float: left;
+    background: #323232;
+    width: 180px;
+}
+.PI-price{
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color:#ffffff;
+    letter-spacing: -0.02em;
+    margin-top: 0px;
+    text-align: right;
+    padding-right: 14px;
+    padding-left: 14px;
+    background:#8c8c8c;
+}
+
+.wrapper2{
+    margin: 0 auto;
+    margin-bottom: 52px;
+}
+
+.news2{
+    margin-top: 52px;
+    height: 500px;
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+}
+.news1{
+    margin-top: 52px;
+    height: 500px;
+    width: 350px;
+    float: left;
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+.news3{
+    margin-top: 52px;
+    height: 500px;
+    width: 350px;
+    float: left;
+}
+
+.news-descr{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color:#555252;
+    letter-spacing: -0.02em;
+}
+.news-descr::after{
+    content: "";
+    display: block;
+    width: 88px;
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #1abc9c;
+}
+section.wrapper2>div>img{
+    margin-bottom: 10px;
+}
+.text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color:#555252;
+    letter-spacing: -0.02em;
+}
+button{
+    margin-top: 12px;
+    height: 33px;
+    width: 104px;
+    background: #1abc9c;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color:#ffffff;
+    letter-spacing: -0.02em;
+    border-radius: 5px;
+    border: 0px;
+}
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/

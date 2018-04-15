@@ -1,0 +1,50 @@
+LOGO{
+art
+}Robotto, light, 30 size, 32 line hight, VA - 20. 555252
+
+nav{
+Home          About Us           page         shop        Blog          Contact Us      
+}Open Sans, bold, 14 size, 11 line hight, VA - 20. 0f0101
+
+section-name{
+FEATURED PRODUCTS
+}Roboto, black, 48 size, 32 line hight, VA - 20. 515151
+
+product{
+Blue Tshirt
+WOMAN shirt
+YELLOW Tshirt
+Cool lingerie
+Blue Tshirt
+WOMAN shirt
+YELLOW Tshirt
+Cool lingerie
+}Roboto, black, 18 size, 32 line hight, VA - 20. ffffff
+
+product_price{
+$26
+$31
+$21
+$56
+$26
+$31
+$21
+$56
+}Roboto, black, 18 size, 32 line hight, VA - 20. ffffff
+
+section2{
+LATEST NEWS
+}Roboto, black, 48 size, 32 line hight, VA - 20. 515151
+
+art{
+3 * Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
+}openSans, Semibold, 18, 26, 20. 555252.
+
+descr{
+3 * Nam nec tellus a odio tincidunt auc. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare 
+}OpenSans, Regular, 14,26,20. 555252.
+
+ReadMore{
+3 * Read More
+}OpenSans, light, 16,26,20.ffffff.
+
