@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,900');
 
 body{
-    width: 1170px;
+    width: 1200px;
     margin: 0 auto;
+}
+
+header{
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 25px;
+    padding-bottom: 10px;
 }
 
 a{
@@ -15,6 +22,7 @@ li{
 
 .logo{
     /*float: left;*/
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 30px;
@@ -22,8 +30,7 @@ li{
     text-transform: uppercase;
     letter-spacing: -0.02em;
     color: #555252;
-    margin-top:30px;
-    margin-left: 40px;
+    /*margin-top:30px;*/
 }
 .logo::before{
     content: url('../img/mart.png')
@@ -31,10 +38,13 @@ li{
 
 .navig{
     float: right;
+    display:inline-block;
     margin-bottom: 0px;
-    margin-top: -24px;
+    /*margin-top: -24px;*/
     width: 540px;
-    text-align: justify;
+    text-align: end;
+    display: table-cell;
+    vertical-align: text-top;
     }
 
 .menu{
@@ -45,8 +55,9 @@ li{
     line-height: 11px;
     text-transform: uppercase;
     color:#0f0101;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.025em;
     margin-right: 34px;
+
 }
 
 .first{
@@ -73,7 +84,6 @@ li{
 }
 
 h1{
-    margin-top: 91px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -81,7 +91,15 @@ h1{
     line-height: 32px;
     text-transform: uppercase;
     color:#515151;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.015em;
+}
+
+.wrapper1>h1{
+    margin-top: 91px;
+}
+
+.wrapper2>h1{
+    margin-top: 72px;
 }
 
 h1::after{
@@ -92,6 +110,7 @@ h1::after{
     background: #1abc9c;
     margin: 0 auto;
     margin-top: 34px;
+    padding-left: 0px;
 }
 
 .prodlist{
@@ -104,14 +123,14 @@ h1::after{
     float:left ;
     margin-right:30px;
     margin-bottom: 30px;
-    height: 314px;
+    height: 324px;
     width: 255px;
-    background: #323232;
+    /*background: #323232;*/
 }
 
-.proditem:hover{
+/*.proditem:hover{
     background: #1abc9c;
-}
+}*/
 .proditem:hover .PI-name{
     background: #1abc9c;
 }
@@ -127,6 +146,11 @@ h1::after{
 img{
     float:left;
 }
+
+.PI-name, .PI-price{
+vertical-align: middle;
+}
+
 .PI-name{
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -135,15 +159,18 @@ img{
     text-transform: uppercase;
     color:#ffffff;
     letter-spacing: -0.02em;
-    margin-top: 0px;
-    text-align: left;
-    padding-left: 15px;
-    float: left;
+    /*text-align: left;*/
+    padding-left: 10px;
+    /*float: left;*/
+    display: table-cell;
+
     background: #323232;
-    width: 180px;
+    width: 201px;
+    height: 40px;
 }
 .PI-price{
-    float: right;
+    /*float: right;*/
+    display: table-cell;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-size: 18px;
@@ -151,11 +178,10 @@ img{
     text-transform: uppercase;
     color:#ffffff;
     letter-spacing: -0.02em;
-    margin-top: 0px;
-    text-align: right;
-    padding-right: 14px;
-    padding-left: 14px;
+    text-align: center;
     background:#8c8c8c;
+    height: 40px;
+    width: 54px;
 }
 
 .wrapper2{
@@ -164,14 +190,14 @@ img{
 }
 
 .news2{
-    margin-top: 52px;
+    margin-top: 48px;
     height: 500px;
     width: 350px;
     float: left;
     margin-right: 30px;
 }
 .news1{
-    margin-top: 52px;
+    margin-top: 48px;
     height: 500px;
     width: 350px;
     float: left;
@@ -180,7 +206,7 @@ img{
 }
 
 .news3{
-    margin-top: 52px;
+    margin-top: 48px;
     height: 500px;
     width: 350px;
     float: left;
@@ -192,15 +218,15 @@ img{
     font-size: 18px;
     line-height: 26px;
     color:#555252;
-    letter-spacing: -0.02em;
+    /*letter-spacing: -0.02em;*/
 }
 .news-descr::after{
     content: "";
     display: block;
-    width: 88px;
+    width: 136px;
     height: 3px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-bottom: 21px;
     background: #1abc9c;
 }
 section.wrapper2>div>img{
@@ -213,11 +239,11 @@ section.wrapper2>div>img{
     line-height: 26px;
     color:#555252;
     letter-spacing: -0.02em;
+    margin-bottom: 10px;
 }
 button{
-    margin-top: 12px;
-    height: 33px;
-    width: 104px;
+    height: 52px;
+    width: 160px;
     background: #1abc9c;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
