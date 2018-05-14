@@ -1,0 +1,299 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.ttf');
+    font-weight: 300;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    margin: 0 auto;
+}
+.funny_team{
+    background-color: rgb(26, 25, 21);
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+body{
+    width: 310px;
+    margin: 0 auto;
+}
+
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .menu {
+        margin: 25px 0px 115px 0px;
+        width: 190px;
+        height: 36px;
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+    }
+    .menu > li{
+        width: 90px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu > li:hover{
+        transition: .2s linear;
+        box-shadow: 0 0 0 2px rgb(255, 255, 255) inset;
+        border-radius: 16px;    
+    }
+
+    .logo{
+        font-size: 20px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;  
+        margin-bottom: 30px;    
+    }
+
+
+    .content > h1{
+        font-size: 30px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .content > p{
+        width: 220px;
+        font-size: 18px;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    button{
+        display: block;
+        height: 40px;
+        width: 280px;
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;  
+        border-radius: 20px;
+    }
+    .content > button{
+        background-color: #ff4e50;
+        border: none;
+        margin-top: 15px;
+        margin-bottom: 205px;
+    }
+    
+    .some_partners > h2{
+        font-size: 22px;
+        font-family: "Montserrat";
+        color: rgb(51, 51, 51);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+      
+    }
+
+    .img1{
+        width: 120px;
+        height: 120px;
+        border: solid transparent 1px;
+        border-radius: 60px;
+        position: relative;
+    }
+    .img2{
+        position: absolute;
+        height: 32px;
+        width: 32px;
+        border: solid white 4px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .n1 > .img1{
+        margin-top: 20px;
+        background-image: url('../img/Layer 6.png');
+    }
+    .img1 > .img2{
+        left: 70%;
+        top: 70%
+    }
+    .n2 > .img1{
+        margin-top: 28px;
+        background-image: url('../img/Layer 8.png');
+    }
+    .n3 > .img1{
+        margin-top: 28px;
+        background-image: url('../img/Layer 7.png');
+    }
+    .n4 > .img1{
+        margin-top: 28px;
+        background-image: url('../img/Layer 9.png');
+    }
+    .m1{
+        background-color: #ff4e50;
+    }
+    .m2{
+        background-color: #ffa507;
+    }
+    .m3{
+        background-color: #1cd7ad;
+    }
+    .m4{
+        background-color: #4e73db;
+    }
+
+    .name{
+        margin-top: 18px;
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(51, 51, 51);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+      
+    }
+
+    .description{
+        margin-top: 15px;
+        font-size: 14px;
+        font-family: "Roboto";
+        color: rgb(102, 102, 102);
+        line-height: 1.2;
+        text-align: center;
+        width: 200px;
+    }
+
+    .some_partners > button{
+        margin-top: 28px;
+        margin-bottom: 57px;
+        background-color: #fff;
+        border: solid #ff4e50 2px;
+        font-size: 14px;
+        font-family: "Montserrat";
+        color: rgb(255, 78, 80);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+@media (min-width:321px){
+    body{
+        width: 768px;
+        margin: 0 auto;
+    }
+    header{
+        padding-top: 45px;
+        width: 87.5%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 135px;
+    }
+    .menu,.logo{
+        margin: 0px;
+    }
+
+    .content > h1{
+        width: 69.2708333333333%;
+        font-size: 52px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+    .content > p{
+        width: 53.3854166666667%;
+        font-size: 24px;
+        font-family: "Roboto";
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: center;
+    }
+    .content > button{
+        width: 226px;
+        margin-top: 32px;
+        margin-bottom: 305px;
+    }
+    .wrapper{
+        width: 532px;
+        height: 564px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .member{
+        width: 236px;
+        height: 282px;
+    }
+    .n1 > .img1{
+        margin-top: 28px;
+    }
+    .some_partners > button{
+        width: 192px;
+    }
+
+}
+
+@media (min-width:769px){
+    body{
+        width: 1440px;
+        margin: 0 auto;
+    }
+    header{
+        width: 65.4166666666667%;
+    }
+    .content > h1{
+        width: 40%;
+    }
+    .wrapper{
+        width: 65.4166666666667%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+}
