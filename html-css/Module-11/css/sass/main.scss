@@ -1,0 +1,265 @@
+@import 'normalize';
+
+@import 'hiden';
+
+@import 'variables';
+
+@import 'mixins';
+
+@import 'fonts';
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.wrapper-background-eagle{
+    // background: url('../../Img/eagle.jpg') no-repeat center;
+    background-size: cover;
+    height: 1000px;
+    min-width: 1200px;
+    margin: 0 auto;
+    background-image: -moz-linear-gradient( 90deg, rgba(252,227,138,0.90) 0%, rgba(243,129,129,0.90) 100%), url('../../Img/eagle.jpg');
+    background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.90) 0%, rgba(243,129,129,0.90) 100%), url('../../Img/eagle.jpg');
+    background-image: -ms-linear-gradient( 90deg, rgba(252,227,138,0.90) 0%, rgba(243,129,129,0.90) 100%), url('../../Img/eagle.jpg');
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+.wrapper-background-eagle{
+    background-image: -moz-linear-gradient( 90deg, rgba(252,227,138,0.90) 0%, rgba(243,129,129,0.90) 100%), url('../../Img/eagle@2x.jpg');
+    background-image: -webkit-linear-gradient( 90deg, rgba(252,227,138,0.90) 0%, rgba(243,129,129,0.90) 100%), url('../../Img/eagle@2x.jpg');
+    background-image: -ms-linear-gradient( 90deg, rgba(252,227,138,0.90) 0%, rgba(243,129,129,0.90) 100%), url('../../Img/eagle@2x.jpg');
+}
+}
+
+.logo{
+    position: absolute;
+    left: 10%;
+    padding: 50px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    list-style: none;
+    .menu__item{
+        width: 75px;
+        height: 40px;    
+        text-align: center;
+    }
+    .menu__item:nth-child(7){
+        // padding-right: 10%;
+    }
+}
+
+.menu__link{
+    &::after{
+        content: "";
+        width: 0px;
+        -webkit-transition-property: width;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: linear;
+    }
+    &:hover::after{
+        content: "";
+        width: 50px;
+        height: 3px;
+        background-color: $top-selected;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.main-header__header{
+    margin-top: 0px;
+    margin: 0 auto;
+    width: 50%;
+   
+}
+
+.main-header__button{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    border: 3px solid white;
+
+}
+
+.headers__header{
+    &::after{
+        content: "";
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 60px;
+        height: 3px;
+        background-color: $h-after;
+    }
+}
+
+.services__list{
+    min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    .services__element{
+        margin-top: 65px;
+        width: 25%;
+        display: flex;
+        padding: 0% 1% 0% 1%;
+        &__icon{
+            display: block;
+            width: 32px;
+            height: 32px;
+            padding: 15px 15px 0px 0px;
+        }
+    }
+}
+
+.social__button{
+    width: 56px;
+    height: 56px;
+    background-color: $top-selected;
+    border: transparent solid 1px;
+    position: absolute;
+    transform: rotateX(90deg);
+    left:0px;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+        transition: .2s linear;
+        background-color:$h-after;
+        border: transparent solid 1px;
+    }
+    &:hover .social__icon{
+        transition: .2s linear;
+        fill:$top-color;
+    }
+}
+.social__icon{
+    display: block;
+    width: 28px;
+    height: 28px;
+    fill:$h-after;
+}
+
+.team__list{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.filling{
+    position: absolute;
+    height: 0px;
+    width: 380px;
+    background-color: #000000;
+    opacity: 0.9;
+    top: -10px;
+    left: -10px;
+    
+
+}
+.team__general-description{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.team__member{
+    position: relative;
+
+    &:nth-child(1){
+        margin-right: 2%;
+    }
+    &:nth-child(2){
+        margin-right: 2%;
+    }
+
+    &:hover{
+        & .social__button:nth-child(5){
+            @include soc_icon(5);
+        }
+        & .social__button:nth-child(2){
+            @include soc_icon(2);
+        }
+        & .social__button:nth-child(3){
+            @include soc_icon(3);
+        }
+        & .social__button:nth-child(4){
+            @include soc_icon(4);
+        }
+        & .filling{
+            transition: .2s linear;
+            height: 470px;
+            box-shadow: 10px 10px 0px 0px #95e1d3; 
+            background-image: -moz-linear-gradient( 90deg, $filling-1 0%, $filling-2 100%);
+            background-image: -webkit-linear-gradient( 90deg, $filling-1 0%, $filling-2 100%);
+            background-image: -ms-linear-gradient( 90deg, $filling-1 0%, $filling-2 100%);  
+        }
+    }
+}
+// .member:hover .social:nth-child(1){
+//     transition: .05s linear;
+//     transform: rotateX(0deg);
+//     left: 68px;
+// }
+
+// .member:hover .social:nth-child(2){
+//     transition: .1s linear;
+//     transform: rotateX(0deg);
+//     left: 124px;
+// }
+// .member:hover .social:nth-child(3){
+//     transition: .15s linear;
+//     transform: rotateX(0deg);
+//     left: 180px;
+// }
+// .member:hover .social:nth-child(4){
+//     transition: .2s linear;
+//     transform: rotateX(0deg);
+//     left: 236px;
+// }
+footer{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright__by{
+    color: $h-after;
+}
+
+.subscribe-form__button{
+    height: 44px;
+    width: 150px;
+    background-color: #95e1d3;
+    border: none;
+}
+
+.subscribe-form__email{
+    height: 40px;
+    width: 228px;
+    border-left: 1px solid #e7e7e7;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: none;
+    padding-left: 10px;
+}

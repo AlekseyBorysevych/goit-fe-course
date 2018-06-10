@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,700');
+
+.logo{
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: $top-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.menu__link{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: $top-color;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;   
+    &:hover{
+        transition: .2s linear;
+        color: $top-selected;
+    }
+}
+
+.main-header__preheader{
+    font-size: 72px;
+    font-family: "Kaushan Script";
+    color: $top-color;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.main-header__header {
+    font-size: 150px;
+    font-family: "Montserrat";
+    color: $top-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.933;
+    text-align: center;
+}
+
+.main-header__button {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: $top-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+  
+  .headers__preheader {
+    padding-top: 45px;
+    font-size: 24px;
+    font-family: "Kaushan Script";
+    color: $middle-color;
+    line-height: 1.2;
+    text-align: center;
+}
+  
+  .headers__header{
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: $middle-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+  .services__element__header{
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: $middle-color;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.services__element__description{
+    font-size: 15px;
+    font-family: "Roboto";
+    color: $text-gray;
+    line-height: 1.6;
+    text-align: left;
+}
+
+  
+.team__general-description {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: $text-gray;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+.team__member__name {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: $middle-color;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+  
+.team__member__position {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: $text-gray;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color:  $middle-color;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.subscribe-form__email {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.subscribe-form__button {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: $top-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+  

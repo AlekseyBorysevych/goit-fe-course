@@ -1,0 +1,5 @@
+@mixin soc_icon($number){
+    transition: (.05s*$number) linear;
+    transform: rotateX(0deg);
+    left: 68px+(56px*($number - 2));
+}
