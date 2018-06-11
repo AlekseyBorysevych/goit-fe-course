@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>JS_Module1</title>
+</head>
+<body>
+<div class="inputForm">
+<h3 class="headerInput">You are logged as:</h3>
+<input id="login" placeholder="Input login">
+<input id="pass" type="password" placeholder="Input passwort">
+<button class="submit">Go into</button>
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+const ADMIN_LOGIN = 'admin';
+const ADMIN_PASSWORD = 'm4ngo1zh4ackz0r';
+
+const CANCELATION = 'Отменено пользователем!';
+const INPUT_BLOCKED = 'Доступ запрещен!';
+const WELCOME = 'Добро пожаловать!';
+
+let login=prompt("Input login, pls:");
+let pass;
+
+let tmp;
+
+switch (login) {
+	case null:
+		alert (CANCELATION);
+		break;
+	case ADMIN_LOGIN:
+		//some code here
+		pass=prompt(`Input passwort for login ${login}, pls:`);
+		
+		if (pass===null) {
+			alert (CANCELATION);
+		} else if (pass!==ADMIN_PASSWORD){
+			alert (INPUT_BLOCKED);
+		} else {
+			alert (WELCOME);
+			
+			document.getElementById('login').value=ADMIN_LOGIN;
+			document.getElementById('pass').value=ADMIN_PASSWORD;
+		}
+		
+		break;
+		//end of some code
+	default:
+		alert (INPUT_BLOCKED);
+}
+
+//]]>
+</script>
+</body>
+</html>

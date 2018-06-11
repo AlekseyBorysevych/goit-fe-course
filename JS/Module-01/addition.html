@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>JS_Add_Module1</title>
+</head>
+<body>
+
+<script type="text/javascript">
+//<![CDATA[
+const INPUT_MESSAGE="Input siting places do you need:";
+const FAILURE_MESSAGE="Ошибка ввода";
+const NOT_ENOUGH_PLACES='Извините, столько мест нет ни в одной группе!';
+const SORRY='Нам очень жаль, приходите еще!';
+
+let sharm=15;
+let hurgada=25;
+let taba=6;
+
+let acceptance;
+
+let sitingPlaces=Number(prompt(INPUT_MESSAGE));
+
+//console.log(sitingPlaces);
+
+if (!(sitingPlaces.IsNaN) && (sitingPlaces%1===0) && (sitingPlaces!==0)) {  //возможно, первая проверка и не нужна. Оставил по условию.
+//console.log('Ok');
+	switch (true) {
+		case (sitingPlaces<=sharm):
+			acceptance = confirm (`Eсть место в группе sharm, согласен ли пользоваетель быть в этой группе?`) ? alert ('Приятного путешествия в группе sharm') : alert(SORRY);
+			break;
+		case (sitingPlaces<=hurgada):
+			acceptance = confirm (`Eсть место в группе hurgada, согласен ли пользоваетель быть в этой группе?`) ? alert ('Приятного путешествия в группе hurgada') : alert(SORRY);
+			break;
+		case (sitingPlaces<=taba):
+			acceptance = confirm (`Eсть место в группе taba, согласен ли пользоваетель быть в этой группе?`) ? alert ('Приятного путешествия в группе taba') : alert(SORRY);
+			break;
+		default:
+			alert(NOT_ENOUGH_PLACES);
+	}
+
+} else {
+alert(FAILURE_MESSAGE);
+}
+
+//]]>
+</script>
+</body>
+</html>
