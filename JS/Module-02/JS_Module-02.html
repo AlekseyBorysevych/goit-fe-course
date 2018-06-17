@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+
+    <title>JS_Module2</title>
+</head>
+<body>
+<!-- <div class="inputForm">
+<h3 class="headerInput">You are logged as:</h3>
+<input id="login" placeholder="Input login">
+<input id="pass" type="password" placeholder="Input passwort">
+<button class="submit">Go into</button>
+</div> -->
+
+
+<script type="text/javascript">
+//<![CDATA[
+    let input, value, result=0;
+    const arrayInput=[];
+    
+    do {
+      input=prompt("Input number, pls:");
+      if (Number.isNaN(Number(input))===false && input!==null && input!==""){
+        arrayInput.push(Number(input));
+      }
+      if (Number.isNaN(Number(input))===true || input===""){
+        alert("Было введено не число, попробуйте еще раз.");
+      }
+    } while(input!==null);  //&& Number.isNaN(Number(input))===false && input!==""
+    
+      console.log(arrayInput);
+    
+    for(value of arrayInput){
+      console.log(value);
+      result += value;
+    }
+      console.log("Сумма:", result);
+    if (result>0){
+      alert(`Общая сумма чисел равна ${result}`);
+    }
+//]]>
+</script>
+</body>
+</html>

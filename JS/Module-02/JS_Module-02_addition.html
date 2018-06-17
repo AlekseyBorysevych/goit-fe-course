@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Module 02, addition</title>
+</head>
+<body>
+<script type="text/javascript">
+    //<![CDATA[
+    const passwords = ['qwerty', '111qwe', '123123', 'r4nd0mp4zzw0rd'];
+    let attempts = 3;
+    do{
+        let UserInput=prompt("Введите Ваш пароль:");
+        if (UserInput===null){
+            break;
+        }
+        if (passwords.includes(UserInput)){
+            alert('Добро пожаловать!');
+            break;
+        } else {
+            attempts -=1;
+            alert(`Неверный пароль, у вас осталось ${attempts} попыток`)
+        }
+    } while(attempts>0);
+
+    if (attempts===0) {
+        alert("У вас закончились попытки, аккаунт заблокирован!");
+    }
+
+    //]]>
+</script>
+</body>
+</html>
