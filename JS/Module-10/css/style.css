@@ -1,0 +1,87 @@
+body{
+    background-color: #c6c7c9;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+}
+.wrapper{
+    width: 560px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #e1e6e9;
+    -webkit-box-shadow: 5px 5px 31px 25px rgba(178,179,181,0.65); 
+    box-shadow: 5px 5px 31px 25px rgba(178,179,181,0.65);
+    padding-top: 5px;
+    border-radius: 3px;
+}
+
+table{
+    margin: 0 auto;
+    background-color: aliceblue;
+    width: 520px;
+    border: 1px double black;
+
+}
+
+thead, tbody { 
+    display: block;
+
+}
+
+tbody {
+    height: 200px;      
+    overflow-y: auto;    
+    overflow-x: hidden;  
+}
+
+th:nth-child(1), td:nth-child(1){
+    width: 230px;
+}
+
+th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3){
+    width: 100px;
+    text-align: center;
+}
+
+.list{
+    padding: 10px;
+    list-style: none;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px double black;
+    background-color: aliceblue;
+    margin-bottom: 15px;
+}
+
+button{
+    width: 100px;
+    height: 38px;
+}
+
+button:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-2px);
+  text-transform: uppercase;
+}
+
+.userData{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px double black;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.userAge{
+    width: 15%;
+}
+.userName{
+    width: 25%;
+}
+.userID{
+    width: 60%;
+}
