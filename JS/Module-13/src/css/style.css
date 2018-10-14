@@ -1,0 +1,86 @@
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+form {
+  height: 30px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+form > input[type="text"] {
+  width: 75%;
+}
+
+form > input[type="button"] {
+  width: 20%;
+}
+
+.Cards {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.card {
+  height: 320px;
+  background: linear-gradient(
+    rgb(50, 141, 216),
+    gold
+  ); /* linear-gradient(to right, skyblue -50%, gold 150%); */
+  position: relative;
+}
+
+.card > div {
+  width: 50px;
+  height: 50px;
+}
+
+.card > div > img {
+  width: 100%;
+  height: auto;
+}
+
+.card > h1 {
+  height: 50px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card > p {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.card > span {
+  height: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.remove {
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card:hover .remove {
+  display: block;
+}
