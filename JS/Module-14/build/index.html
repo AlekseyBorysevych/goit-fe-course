@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HomeTask13</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+    <form action="submit">
+        <input type="text" name="" id="InputURl" placeholder="Input correct internet-address">
+        <input type="button" value="Добавить" class="addButton">
+    </form>
+    <div class="Cards row"></div>
+    <template id="cardTemplate">
+        <div class="card col-12 col-md-4 col-xl-3">
+            <h1 title="{{title}}">{{title}}</h1>
+            <div><img src="{{image}}" alt="site logo"></div>
+            <p>{{description}}</p>
+            <span title="{{url}}">URL: {{url}}</span>
+            <button class="remove">Remove</button>
+        </div>
+    </template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
